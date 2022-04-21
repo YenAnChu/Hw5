@@ -1,0 +1,42 @@
+String name = "";
+String gender = "";
+String birthday = "";
+String ID = "";
+String check = "2";
+
+while(check == "2")
+ {
+        Console.WriteLine("姓名");
+        name = Console.ReadLine();
+        Console.WriteLine("性別 ( 男生填 1 女生填 2 ) ");
+        gender = Console.ReadLine();
+        Console.WriteLine("出生年月日");
+        birthday = Console.ReadLine();
+        Console.WriteLine("學號");
+        ID = Console.ReadLine();
+
+        Console.WriteLine("-------------");//分隔島
+
+        Console.WriteLine("姓名:" + name);
+        if (gender == "1" )
+        {
+           Console.WriteLine("性別:男生");
+        }
+        else
+        {
+           Console.WriteLine("性別:女生");
+        }
+
+        Console.WriteLine("出生年月日:" + birthday);
+        Console.WriteLine("學號:" + ID);
+        Console.WriteLine("-------------");//分隔島
+        Console.WriteLine("資料正確請填 1 錯誤請填 2");
+        check = Console.ReadLine();
+
+       if (check == "2" )
+        {
+           Console.WriteLine("重新填寫");
+           Console.WriteLine("-------------");//分隔島
+        }
+ }    
+  Console.WriteLine("已完成建置");
